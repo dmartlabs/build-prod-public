@@ -60,7 +60,7 @@ APP_NAME=$(echo $REPO_NAME | sed -e "s/github_dmartlabs_//g")
 #cp values_final.yaml build-canary/template/values.yaml
 cp values-public-prod.yaml build-prod-public/template/values.yaml
 
-cd build-prod/template
+cd build-prod-public template
 sed -e "s/APP_NAME/$APP_NAME/g" Chart.yaml.tpl | \
     sed -e "s/SHORT_SHA/$SHORT_SHA/g" -e "s/BRANCH_NAME/$BRANCH_NAME/g"\
     > Chart.yaml
