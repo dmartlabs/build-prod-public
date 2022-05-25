@@ -1,0 +1,35 @@
+steps:
+- id: 'Get build templates'
+  name: 'gcr.io/cloud-builders/gcloud'
+  args: ['source', 'repos', 'clone', 'build-prod-public']
+
+- id: 'Prepare build files'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: '/bin/bash'
+  args:  
+  - '-c'
+  - |
+    APP_NAME=$$(echo $REPO_NAME | sed -e "s/github_dmartlabs_//g")
+    cp values.yaml build-prod-public/template
+    cd build-prod-public/template
+    sed -e "s/APP-NAME/$$APP_NAME/g" Chart.yaml.tpl | > Chart.yaml
+
+- id: 'Prepare workspace'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: '/bin/bash'
+  args:  
+  - '-c'
+  - |
+    cp build-prod-public/profiles/prep_profile.sh ./
+    chmod +x ./prep_profile.sh
+    ./prep_profile.sh
+    ls -al
+    cp values.yaml build-prod-public/template/values.yaml
+
+
+- id: 'Build'
+  name: 'gcr.io/cloud-builders/mvn'
+  args: 
+    - '-ntp'
+    - 'install'
+    - '-DskipTests'

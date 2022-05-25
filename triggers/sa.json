@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "meradmart-canary",
+  "private_key_id": "18bc7dc967c27b6773181464e760bb31572a55d5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCh84pp73r6CvXd\nx0LI9p695KEV1cPqJyPgR0sAZ4xfIvwiBqPf5za0gzAw5ZJMHx3wtGAqpMpoqsFC\nQtUJdaBtsGhd0fR9FoNfH9hlbGKnLmxyqtv592vcnyEFynxRwb9ev+iV5dOsgVNf\n0SF3PgT+8aqrLlDb1+Jjj9HFkil1SB0ye6QXFdP3INpL9z/VrxNGhNV7Bpec++Fx\njVvALjuWZ1+ly131uLiXSciDzyq6z2uUB2Sff4T8an1RFk7gC9lLn93oJ0Etr2/C\now9wO54eNbgTtFSC6zad6aX7WtTLb6+HRf3Rub5TNWtMlhk8BfJ/hoHOlzTiDgnV\ndTBYNSRdAgMBAAECggEAAR9PxhR/nNb8RYlZeEy5OeX+ix5cSWBJuoapSZCYzkSk\nTFS7yFPxCEbhIR2eKhfhxxFrmdq4Kl8wkAB9kHS3uWWKZkgLsog4PdhZ0WNzEDyH\n9N15QR4KqdCSfoNHjEYpni2knialv7bKY0oZj3AnFws0BxP+7HRuYF6WnLtlZ9Im\nyLT3erJCYDWVoQvUu1nfI/HUT9TkEF/SssLNHCx3nvX27hNMqZdpmN8NPjYs+kB3\n2jZeUmKQVMW4kyenlBY6OtE55yyLJMqna8VH96VKCDmuI+JO/yOtuVnTerNIjawM\nw+uhsAiqLPzUKqk5++nDXm39Vmc7bkw86oNy/XZBMQKBgQDdLYqMrZL70k4GCrOF\nC3/wCY44xtTf/Wx5LumI8aPiU1BUuXkJek/K9NBvUwrCOcXb4IszEUxIwGLhi4kn\n5LYa0q26GzCSSdfptoj1+3FdHlag20zboEaK3U6dGgDsdOlAz0IQeRipZSjI1Mja\ntEYZ9MgukxbEjesPWVhrH/cOSQKBgQC7cudndI5b31Of8qe33mr8QrYFdKrG+Yd5\nl8Ec8YnOi8FVHfusMbb78TW8z8SVW01UsiOtm5rUJFOCGcjdGVGesZ6XsOd5DvuS\nlZ4NSN353/+T2VxcKuHP55CDvtG7dRfM9lvkhB1w0OyDMKbVO7PZj4U+b+I8LB1o\nunlN3aK1dQKBgCrOgZ4wid4LGea5c30weJZwgwIiGVkwpyndFn3Wpq1LCqUbMH3R\nGlhhgWXKYK6ul8iycL51fpomAf09EFKURVpzpAP89y2Y9Rzaoy9Ydtxa3tFLIFjx\ncDW4F1r4iW06Q1qzwkmF5mwClB4qcKVDdr3XTlcVSLbJ8NCLrj0tdpdhAoGAA/kK\neIHa5o2UKyascVQwdko/q1vupqrxOR2DRUbFQfBqV5B8HgkrtKlHF0pcA0JdIDdq\nVCqhHG/sqSw8uprnxPJExzhDn6g2osOzBtsNgVdDBnIr5/QstwhUYsZvkYaIy5pJ\nFk3KhfKXoKwuTQSn6iuFim46oEXbFbYmDgVthmUCgYBSuOdIaIqaBF48/BYV1DHD\nIx4tKb2TAv0loljRHhIBRlqo1R/rNAF4S+/3NJbH++aGqIQ1zMyqcMLol36T5Y97\nyVAyu7vpC096lyIRINx6HGy7POR1lJlN8PAjiWdzuEbcbMSbej6I8zqcfq7ASyM4\n6TXdhNq2eY+DF3IfW2cHEw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-builds-gitops@meradmart-canary.iam.gserviceaccount.com",
+  "client_id": "113054108546582534511",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-builds-gitops%40meradmart-canary.iam.gserviceaccount.com"
+}

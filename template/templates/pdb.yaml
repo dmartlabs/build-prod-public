@@ -1,0 +1,16 @@
+# Helm template for the hpa
+# Author Harikrishnan M <hari@dmartlabs.com>
+
+{{- if .Values.pdb.create }}
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "template.fullname" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+spec:
+  {{- toYaml .Values.pdb.spec | nindent 2 }}
+  selector:
+    matchLabels:
+      {{- include "template.selectorLabels" . | nindent 6 }}
+ {{- end }}
