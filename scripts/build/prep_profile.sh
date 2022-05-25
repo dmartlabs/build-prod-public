@@ -5,11 +5,11 @@ if [ -f "package.json" ]; then
     echo "THIS IS STILL A TODO"
   else
     echo "Prparing for nginx deployment"
-    cp -r build-prod/profiles/npm/nginx/* ./
+    cp -r build-prod-public/profiles/npm/nginx/* ./
   fi
 elif [ -f "pom.xml" ]; then
   echo "Preparing a maven build"
-  cp -r build-prod/profiles/mvn/* ./
+  cp -r build-prod-public/profiles/mvn/* ./
 else
   echo "Unable to detect build type. Will fail "
   exit 1
