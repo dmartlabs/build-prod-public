@@ -11,7 +11,7 @@ APP_NAME=$(echo ${REPO_NAME} | sed -e 's/github_dmartlabs_//g')
 CONTAINER_NAME=$(echo asia.gcr.io/$PROJECT_ID/$APP_NAME)
 
 echo "Installing chart for $APP_NAME using $CONTAINER_NAME:$SHORT_SHA"
-cd build-prod
+cd build-prod-public
 
 if [[ $DEBUG = "enabled" ]]; then
     echo "### HELM DEBUG MODE SET ###"
