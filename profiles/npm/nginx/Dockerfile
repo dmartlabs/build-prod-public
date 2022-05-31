@@ -1,4 +1,4 @@
-FROM asia.gcr.io/meradmart-prod/distroless-nginx:1.19.6
+FROM asia.gcr.io/public-prod-01/distroless-nginx:1.19.6
 COPY default.conf /etc/nginx/conf.d/
 COPY nginx.conf /etc/nginx/
 COPY /build usr/share/nginx/html
